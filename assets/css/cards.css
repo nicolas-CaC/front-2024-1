@@ -1,0 +1,34 @@
+.cards-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.card-container {
+    font-family: var(--font-2);
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.796);
+    border-radius: 5px;
+    max-width: 10rem;
+    height: 16rem;
+    text-align: center;
+    align-content: center;
+    filter: drop-shadow(0px 10px 4px var(--color-1));
+    cursor: pointer
+}
+
+.card-container:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transition: all .5s ease;
+}
+
+
+.card-container img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+}
