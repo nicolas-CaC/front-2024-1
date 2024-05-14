@@ -37,3 +37,8 @@ async function createDefaultContainer(search) {
     createCards(result.data, search)
 }
 
+
+async function createPerrosContainer(search) {
+    const result = await getApiData(apis[search])
+    createCards(result, search)
+}

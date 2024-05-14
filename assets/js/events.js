@@ -10,12 +10,9 @@ const searchHandleKeyup = (e) => {
 
     if (search === 'valorant')
         createDefaultContainer(search)
-}
 
-
-const cardHandleClick = (character) => {
-    localStorage.setItem('character', JSON.stringify(character))
-    location.href = 'pagina.html'
+    if (search === 'perros')
+        createPerrosContainer(search)
 }
 
 
@@ -34,6 +31,13 @@ const windowHandleScroll = () => {
 
 
 
+const cardHandleClick = (character) => {
+    localStorage.setItem('character', JSON.stringify(character))
+    location.href = 'pagina.html'
+}
+
+
+
 const headerHandleMouseover = () => {
     header.style.visibility = 'visible'
     header.style.opacity = '100%'
@@ -41,8 +45,7 @@ const headerHandleMouseover = () => {
 
 
 
-const arrowHandleClick = () => {
-    window.scrollTo(0, 0)
-}
+const arrowHandleClick = () => window.scrollTo(0, 0)
+
 
 
