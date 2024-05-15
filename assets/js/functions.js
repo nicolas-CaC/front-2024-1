@@ -6,12 +6,12 @@ async function getApiData(url) {
 
 
 
-function createCards(characters, api) {
+function createCards(characters, search) {
     container.innerHTML = ''
     for (const character of characters) {
         const card = document.createElement('div')
         card.className = "card-container"
-        card.innerHTML = templates[api](character)
+        card.innerHTML = templates[search](character)
         card.addEventListener('click', () => cardHandleClick(character))
         container.append(card)
     }
